@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bookshelf Apps</h1>
+    </header>
+    <main>
+      <section id="input-section">
+        <h2>Masukkan Buku Baru</h2>
+        <form id="inputBookForm">
+          <div class="input">
+            <label for="title">Judul</label>
+            <input type="text" id="title" required />
+          </div>
+          <div class="input">
+            <label for="author">Penulis</label>
+            <input type="text" id="author" required />
+          </div>
+          <div class="input">
+            <label for="year">Tahun</label>
+            <input type="number" id="year" required />
+          </div>
+          <div class="input-inline">
+            <label for="isComplete">Selesai dibaca</label>
+            <input type="checkbox" id="isComplete" />
+          </div>
+          <button type="submit">Masukkan Buku ke rak</button>
+        </form>
+      </section>
+      <section class="search_section">
+        <form id="searchBook">
+          <label for="searchBookTitle">Cari Berdasarkan judul</label>
+          <input id="searchBookTitle" type="text" />
+          <button type="cari">Cari</button>
+        </form>
+      </section>
+
+      <section id="bookshelves">
+        <div class="bookshelf">
+          <h2>Belum selesai dibaca</h2>
+          <ul id="unfinishedBookshelf"></ul>
+        </div>
+        <div class="bookshelf">
+          <h2>Selesai dibaca</h2>
+          <ul id="finishedBookshelf"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
